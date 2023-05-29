@@ -325,6 +325,18 @@ this.cloneCloud = false
 			playerTwo.general()
 		}
 	}
+	this.Reset = function () {
+		this.posX = distance;
+		this.posY = window.innerWidth * .48;
+		this.change = startpos;
+		this.HP = 0
+		this.multiShadowClone = false
+		this.hitStun = false
+		this.moveStun = false
+		this.trip = false
+		this.tripBw = false
+		this.chackra = 1
+    }
 	this.airAttack = []
 	this.attack = []
 	this.blank = function() {
@@ -1708,11 +1720,8 @@ function keyUp(evt) {
 		p2Wins = false;
 		p1Lives = 5;
 		p2Lives = 5;
-		this.posX = distance;
-		this.posY = window.innerWidth * .48;
-		this.change = startpos;
-		this.HP = 0
-		this.multiShadowClone = false
+		playerOne.Reset();
+		playerTwo.Reset();
 	}
 	buttons[evt.keyCode || evt.which] = false
 }
