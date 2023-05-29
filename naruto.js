@@ -90,5 +90,5 @@ function loadFights() {
 function beginLoadingFights(imgVar, fileName) {
 	imgVar.onload = player1.normalNeatral()
 	imgVar.onload = player2.normalNeatral();
-	imgVar.src = "images/"+fileName;
+	imgVar.src = "Images/"+fileName;
 }

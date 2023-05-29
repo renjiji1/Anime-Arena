@@ -252,7 +252,7 @@ function loadPics() {
 }
 
 function beginLoadingPics(imgVar, fileName) {
-	imgVar.src = "images/" + fileName;
+	imgVar.src = "Images/" + fileName;
 }
 
 function player(distance, startpos) {

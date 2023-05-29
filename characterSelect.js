@@ -61,7 +61,7 @@ function characterSelect() {
 
 function beginLoadingImgs(imgVar, fileName) {
 	imgVar.onload = loadCharacterSelect();
-	imgVar.src = "images/"+fileName;
+	imgVar.src = "Images/"+fileName;
 }
 
 
