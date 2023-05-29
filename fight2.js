@@ -1733,8 +1733,8 @@ function keyUp(evt) {
 		p2Wins = false;
 		p1Lives = 5;
 		p2Lives = 5;
-		playerOne.Reset();
-		playerTwo.Reset();
+		player1.Reset();
+		player2.Reset();
 	}
 	buttons[evt.keyCode || evt.which] = false
 }
