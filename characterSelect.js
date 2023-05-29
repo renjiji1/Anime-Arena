@@ -41,7 +41,7 @@ function updateMousePos(evt) {
 
 function characterSelect() {
 	var loaded = false;
-	var imageList = [{pic: backgroundPic, theFile: "backGround.png"},
+	var imageList = [{pic: backgroundPic, theFile: "background.png"},
 					{pic: narutoPortraitPic, theFile: "narutoPortrait.png"},
 					{pic: touchedNarutoPortraitPic, theFile: "touchedNarutoPortrait.png"},
 					{pic: player1Pic, theFile: "player1.png"}, 

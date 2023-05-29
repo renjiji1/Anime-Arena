@@ -194,13 +194,19 @@ function Lives() {
 	if (p1Lives <= 0) {
 		p2Wins = true;
 		winner = "Player 2"
-		stateOfPlay = 3;
 	}
 	if (p2Lives <= 0) {
 		p1Wins = true;
 		winner = "Player 1"
-		stateOfPlay = 3;
 	}
+	if (p1Wins || p2Wins) {
+		this.posX = distance;
+		this.posY = window.innerWidth * .48;
+		this.change = startpos;
+		this.HP = 0
+		this.multiShadowClone = false
+		stateOfPlay = 3;
+    }
 
 }
 
