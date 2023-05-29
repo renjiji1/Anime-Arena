@@ -40,7 +40,7 @@ function updateMousePos(evt) {
 }
 
 function characterSelect() {
-
+	var loaded = false;
 	var imageList = [{pic: backgroundPic, theFile: "backGround.png"},
 					{pic: narutoPortraitPic, theFile: "narutoPortrait.png"},
 					{pic: touchedNarutoPortraitPic, theFile: "touchedNarutoPortrait.png"},
@@ -56,11 +56,17 @@ function characterSelect() {
 	
 	for(var i=0;i<imageList.length;i++) {	
 		beginLoadingImgs(imageList[i].pic, imageList[i].theFile);
+		if (i >= imageList.length - 1) {
+			loaded = true;
+        }
 	}	
+	if (loaded) {
+		loadCharacterSelect()
+    }
 }
 
 function beginLoadingImgs(imgVar, fileName) {
-	imgVar.onload = loadCharacterSelect();
+	//imgVar.onload = loadCharacterSelect();
 	imgVar.src = "Images/"+fileName;
 }
 
