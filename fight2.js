@@ -325,31 +325,7 @@ this.cloneCloud = false
 			playerTwo.general()
 		}
 	}
-	this.Reset = function () {
-		this.posX = distance;
-		this.posY = window.innerWidth * .48;
-		this.change = startpos;
-		this.HP = 0
-		this.multiShadowClone = false
-		this.hitStun = false
-		this.moveStun = false
-		this.trip = false
-		this.tripBw = false
-		this.idle = false;
-		this.running = false;
-		this.right = false;
-		this.left = false;
-		this.runningBw = false;
-		this.backward = false;
-		this.fallingBw = false;
-		this.falling = false;
-		this.down = false;
-		this.downBw = false;
-		this.leap = false;
-		this.animation = []
-		this.nomation = []
-		this.chackra = 1
-    }
+
 	this.airAttack = []
 	this.attack = []
 	this.blank = function() {
@@ -1728,13 +1704,7 @@ function keyPressed(evt) {
 }
 function keyUp(evt) {
 	if (evt.keyCode && stateOfPlay == 3 && (p2Wins || p1Wins)) {
-		stateOfPlay = 1;
-		p1Wins = false;
-		p2Wins = false;
-		p1Lives = 5;
-		p2Lives = 5;
-		player1.Reset();
-		player2.Reset();
+		location.reload()
 	}
 	buttons[evt.keyCode || evt.which] = false
 }
