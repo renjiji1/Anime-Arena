@@ -23,9 +23,9 @@ var song = document.createElement('audio');
 
 var player1 = new player(window.innerWidth *.25, 1);
 var player2 = new player(window.innerWidth *.65, 2);
-var bgMusic = new Audio("images/magiSong.mp3")
+var bgMusic = new Audio("Images/magiSong.mp3")
 bgMusic.volume = .01;
-var hitSound = new Audio("images/hit.wav")
+var hitSound = new Audio("Images/hit.wav")
 var noRepeatClone1 = true
 var noRepeatClone2 = true
 var clone1 = new player(player1.posX + window.innerWidth *.05, player1.change)

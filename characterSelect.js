@@ -29,7 +29,7 @@ let backgroundPicLoaded = false;
 let player1PicLoaded = false;
 let player2PicLoaded = false;
 let characterSelectWordsLoaded = false;
-var selectMusic = new Audio("images/hxhSong.mp3")
+var selectMusic = new Audio("Images/hxhSong.mp3")
 selectMusic.volume = .1
 
 function updateMousePos(evt) {

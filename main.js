@@ -26,7 +26,7 @@ window.onload = function() {
 		screenLoaded = true;
 		drawStartUpScreen();
 	}
-	entranceScreen.src = "images/screen.png";
+	entranceScreen.src = "Images/screen.png";
 	entranceScreen.height = canvas.height;
 	canvasContext.drawImage(entranceScreen, 0, 0);
 	
